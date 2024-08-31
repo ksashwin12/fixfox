@@ -10,7 +10,6 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("browser.download.manager.addToRecentDocs", false);
 //Disabled Features
 user_pref("extensions.pocket.enabled", false);
-user_pref("full-screen-api.enabled", false);
 user_pref("device.sensors.enabled", false);
 user_pref("accessibility.force_disabled", 1);
 user_pref("devtools.accessibility.enabled", false);
@@ -164,5 +163,6 @@ user_pref("permissions.default.xr", 2);
 user_pref("findbar.highlightAll", true);
 user_pref("layout.css.prefers-color-scheme.content-override", 0);
 user_pref("browser.backspace_action", 0);
+user_pref("full-screen-api.enabled", true);
 user_pref("ui.key.menuAccessKeyFocuses", false);
 user_pref("mousewheel.default.delta_multiplier_y", 275);
