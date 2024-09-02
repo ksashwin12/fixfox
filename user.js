@@ -127,7 +127,6 @@ user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.pocket", false);
 user_pref("browser.urlbar.suggest.weather", false);
 user_pref("browser.urlbar.suggest.topsites", false); 
-user_pref("browser.urlbar.autoFill", false);
 user_pref("network.IDN_show_punycode", true);
 //Autofill
 user_pref("browser.formfill.enable", false);
@@ -163,6 +162,5 @@ user_pref("permissions.default.xr", 2);
 user_pref("findbar.highlightAll", true);
 user_pref("layout.css.prefers-color-scheme.content-override", 0);
 user_pref("browser.backspace_action", 0);
-user_pref("full-screen-api.enabled", true);
 user_pref("ui.key.menuAccessKeyFocuses", false);
 user_pref("mousewheel.default.delta_multiplier_y", 275);
