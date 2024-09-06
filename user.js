@@ -1,6 +1,5 @@
 //Disabled Recommendations
 user_pref("browser.aboutwelcome.enabled", false);
-user_pref("browser.aboutConfig.showWarning", false);
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("webchannel.allowObject.urlWhitelist", "");
@@ -9,23 +8,18 @@ user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("browser.download.manager.addToRecentDocs", false);
 //Disabled Features
-user_pref("extensions.pocket.enabled", false);
 user_pref("device.sensors.enabled", false);
 user_pref("accessibility.force_disabled", 1);
 user_pref("devtools.accessibility.enabled", false);
 user_pref("dom.ipc.processPriorityManager.backgroundUsesEcoQoS", false);
 user_pref("media.peerconnection.enabled", false);
-user_pref("layout.css.visited_links_enabled", false);
 user_pref("browser.tabs.tabmanager.enabled", false);
 user_pref("browser.search.separatePrivateDefault", false);
 user_pref("browser.search.separatePrivateDefault.ui.enabled", false);
 user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("browser.shell.shortcutFavicons", false);
-user_pref("browser.shell.checkDefaultBrowser", false);
 user_pref("security.tls.enable_0rtt_data", false);
-user_pref("privacy.userContext.enabled", false);
-user_pref("privacy.userContext.ui.enabled", false);
 user_pref("browser.uitour.enabled", false);
 user_pref("browser.uitour.url", "");
 user_pref("pdfjs.enableScripting", false);
@@ -34,8 +28,6 @@ user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", fa
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
-user_pref("identity.fxaccounts.enabled", false);
-user_pref("identity.fxaccounts.autoconfig.uri", "");
 user_pref("cookiebanners.service.mode", 1);
 user_pref("browser.newtabpage.activity-stream.showWeather", false);
 //Google Safebrowsing
@@ -105,9 +97,6 @@ user_pref("network.predictor.enabled", false);
 user_pref("network.predictor.enable-prefetch", false);
 user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("browser.places.speculativeConnect.enabled", false);
-//DNS
-user_pref("network.trr.mode", 3);
-user_pref("network.trr.uri", "https://security.cloudflare-dns.com/dns-query");
 //URL Bar
 user_pref("browser.urlbar.speculativeConnect.enabled", false);
 user_pref("browser.urlbar.quicksuggest.enabled", false);
@@ -159,8 +148,29 @@ user_pref("permissions.default.microphone", 2);
 user_pref("permissions.default.desktop-notification", 2);
 user_pref("permissions.default.xr", 2);
 //Enabled
-user_pref("findbar.highlightAll", true);
-user_pref("layout.css.prefers-color-scheme.content-override", 0);
-user_pref("browser.backspace_action", 0);
-user_pref("ui.key.menuAccessKeyFocuses", false);
 user_pref("mousewheel.default.delta_multiplier_y", 275);
+//Alt doesn't open the menu bar
+user_pref("ui.key.menuAccessKeyFocuses", false);
+//Backspace to go back to previous page
+user_pref("browser.backspace_action", 0);
+//Firefox Containers
+user_pref("privacy.userContext.enabled", false);
+user_pref("privacy.userContext.ui.enabled", false);
+//Dark Mode for websites
+user_pref("layout.css.prefers-color-scheme.content-override", 0);
+//Disable about:config warning
+user_pref("browser.aboutConfig.showWarning", false);
+//Disable default browser prompt
+user_pref("browser.shell.checkDefaultBrowser", false);
+//Disable Pocket
+user_pref("extensions.pocket.enabled", false);
+//DNS
+user_pref("network.trr.mode", 3);
+user_pref("network.trr.uri", "https://security.cloudflare-dns.com/dns-query");
+//Firefox Sync
+user_pref("identity.fxaccounts.enabled", false);
+user_pref("identity.fxaccounts.autoconfig.uri", "");
+//Highlight All matches when using Ctrl + f
+user_pref("findbar.highlightAll", true);
+//Visited links won't be of a different color
+user_pref("layout.css.visited_links_enabled", false);
