@@ -172,5 +172,7 @@ user_pref("identity.fxaccounts.enabled", false);
 user_pref("identity.fxaccounts.autoconfig.uri", "");
 //Highlight All matches when using Ctrl + f
 user_pref("findbar.highlightAll", true);
+//Keep the browser open even if the last tab is closed
+user_pref("browser.tabs.closeWindowWithLastTab", false);
 //Visited links won't be of a different color
 user_pref("layout.css.visited_links_enabled", false);
