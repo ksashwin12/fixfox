@@ -6,6 +6,7 @@ user_pref("webchannel.allowObject.urlWhitelist", "");
 user_pref("browser.urlbar.groupLabels.enabled", false);
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("browser.preferences.moreFromMozilla", false);
+user_pref("browser.preferences.experimental", false);
 user_pref("browser.download.manager.addToRecentDocs", false);
 //Disabled Features
 user_pref("device.sensors.enabled", false);
@@ -30,6 +31,9 @@ user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
 user_pref("cookiebanners.service.mode", 1);
 user_pref("browser.newtabpage.activity-stream.showWeather", false);
+user_pref("browser.pagethumbnails.capturing_disabled", true);
+user_pref("keyword.enabled", false);
+user_pref("dom.serviceWorkers.enabled", false);
 //Google Safebrowsing
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
@@ -55,6 +59,8 @@ user_pref("geo.enabled", false);
 user_pref("geo.provider.ms-windows-location", false);
 user_pref("geo.provider.network.url", "");
 user_pref("browser.region.update.enabled", false);
+user_pref("browser.region.network.url", "");
+user_pref("browser.search.region", "US");
 //Connections
 user_pref("network.http.max-connections", 1800);
 user_pref("network.http.max-persistent-connections-per-server", 10);
@@ -81,6 +87,7 @@ user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("app.normandy.enabled", false);
 user_pref("app.normandy.api_url", "");
+user_pref("app.normandy.user_id", "");
 //Disbale Crash Reports
 user_pref("breakpad.reportURL", "");
 user_pref("browser.tabs.crashReporting.sendReport", false);
@@ -107,6 +114,7 @@ user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.trending.featureGate", false);
 user_pref("browser.urlbar.addons.featureGate", false);
 user_pref("browser.urlbar.mdn.featureGate", false);
+user_pref("browser.urlbar.yelp.featureGate", false);
 user_pref("browser.urlbar.clipboard.featureGate", false);
 user_pref("browser.urlbar.suggest.bookmark", false);
 user_pref("browser.urlbar.suggest.clipboard", false);
@@ -115,7 +123,8 @@ user_pref("browser.urlbar.suggest.mdn", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.pocket", false);
 user_pref("browser.urlbar.suggest.weather", false);
-user_pref("browser.urlbar.suggest.topsites", false); 
+user_pref("browser.urlbar.suggest.topsites", false);
+user_pref("browser.urlbar.suggest.trending", false); 
 user_pref("network.IDN_show_punycode", true);
 //Autofill
 user_pref("browser.formfill.enable", false);
@@ -128,6 +137,7 @@ user_pref("browser.contentblocking.category", "strict");
 user_pref("privacy.resistFingerprinting.randomization.daily_reset.enabled", true);
 user_pref("security.ssl.require_safe_negotiation", true);
 user_pref("security.OCSP.require", true);
+user_pref("security.OCSP.enabled", 0);
 user_pref("security.cert_pinning.enforcement_level", 2);
 user_pref("security.remote_settings.crlite_filters.enabled", true);
 user_pref("security.pki.crlite_mode", 2);
@@ -138,6 +148,7 @@ user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("dom.disable_window_move_resize", true);
 user_pref("extensions.enabledScopes", 5);
 user_pref("extensions.postDownloadThirdPartyPrompt", false);
+user_pref("security.mixed_content.block_display_content", true);
 //Referer
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 //Permissions
@@ -149,11 +160,12 @@ user_pref("permissions.default.desktop-notification", 2);
 user_pref("permissions.default.xr", 2);
 //Enabled
 user_pref("mousewheel.default.delta_multiplier_y", 275);
+user_pref("editor.truncate_user_pastes", false);
 //Alt doesn't open the menu bar
 user_pref("ui.key.menuAccessKeyFocuses", false);
 //Backspace to go back to previous page
 user_pref("browser.backspace_action", 0);
-//Firefox Containers
+//Firefox Containers Disabled
 user_pref("privacy.userContext.enabled", false);
 user_pref("privacy.userContext.ui.enabled", false);
 //Dark Mode for websites
@@ -174,5 +186,7 @@ user_pref("identity.fxaccounts.autoconfig.uri", "");
 user_pref("findbar.highlightAll", true);
 //Keep the browser open even if the last tab is closed
 user_pref("browser.tabs.closeWindowWithLastTab", false);
+//Limit event that can cause pop-up
+user_pref("dom.popup_allowed_events", "click dblclick");
 //Visited links won't be of a different color
 user_pref("layout.css.visited_links_enabled", false);
